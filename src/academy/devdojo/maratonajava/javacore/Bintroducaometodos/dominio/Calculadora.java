@@ -9,4 +9,10 @@ public class Calculadora {
     public void subtracaoMenosNumero(){
         System.out.println(21-12);
     }
+
+    //PARAMETROS
+    public void multiplicaDoisNumeros(int num1, int num2){
+        System.out.println(num1 * num2);
+
+    }
 }
