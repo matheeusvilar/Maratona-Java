@@ -1,9 +1,10 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double [] salarios;
+    private String nome;
+    private int idade;
+    private double [] salarios;
+    private double media = 0;
 
     public void imprime(){
         System.out.println(this.nome);
@@ -20,11 +21,43 @@ public class Funcionario {
         if(salarios == null) {
             return;
         }
-        double media = 0;
+
             for (double salario : salarios) {
                 media += salario;
             }
 //        media /= salarios.length;
         System.out.println("\nMedia salarial " + media);
+    }
+
+//    public void setMedia(double media) {
+//        this.media = media;
+//    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public double[] getSalarios() {
+        return salarios;
+    }
+
+    public double getMedia() {
+        return media;
     }
 }
