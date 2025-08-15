@@ -6,6 +6,7 @@ public class AnimeTest01 {
     public static void main(String[] args) {
         Anime anime = new Anime();
         anime.init("Jujutsu Kaizen","TV",12);
+        anime.init("Jujutsu Kaizen","TV",12, "Ação");
         anime.imprime();
     }
 }
