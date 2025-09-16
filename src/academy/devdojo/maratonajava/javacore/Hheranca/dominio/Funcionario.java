@@ -1,18 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
+// (EXTENDS) estou dizendo que o funcionario vai ter todos os atributos e metodos que uma pessoa tem ate pq um funcionario e uma pessoa
+public class Funcionario extends Pessoa {
 
-public class Funcionario {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
     private double Salario;
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public double getSalario() {
         return Salario;
@@ -20,21 +10,5 @@ public class Funcionario {
 
     public void setSalario(double salario) {
         Salario = salario;
-    }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 }
